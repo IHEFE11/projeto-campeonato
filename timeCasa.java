@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class timeCasa extends time {
+public class timeCasa extends time implements Marcagol {
     private int golscasa;
     private ArrayList<Integer> tempo;
 
     public timeCasa() {
+        super(e7.getNome(),e7.getQualidade());
         this.tempo = new ArrayList<>();
         for(int i=0;i<10;i++){
         tempo.add(i*10);}
