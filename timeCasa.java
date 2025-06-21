@@ -35,10 +35,9 @@ public class timeCasa extends time {
    if(numeroSorteado==0){
     golscasa+=1;
     System.out.println("gol do time casa aos "+tempo.get(i));
-   }
-}
-    System.out.println("quantidade de gols "+golscasa);
+        }
     }
+}
  public int mostrarGolcasa(){
     return getgolscasa();
     }

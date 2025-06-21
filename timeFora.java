@@ -36,13 +36,12 @@ public class timeFora extends time {
    if(numeroSorteado==0){
     golsfora+=1;
     System.out.println("gol do time fora aos "+tempo.get(i));
-   }
-}
-    System.out.println("quantidade de gols "+golsfora);
+        }
     }
+}
     public int mostrarGolfora(){
     return getgolsfora();
-}
+    }
 }
 
 
