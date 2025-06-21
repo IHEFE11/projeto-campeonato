@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class timeFora extends time {
 
-    private int gols;
+    private int golsfora;
     private ArrayList<Integer> tempo;
 
     public timeFora() {
@@ -12,12 +12,12 @@ public class timeFora extends time {
         tempo.add(i*10);}
     }
 
-    public int getGols() {
-        return gols;
+    public int getgolsfora() {
+        return golsfora;
     }
 
-    public void setGols(int gols) {
-        this.gols = gols;
+    public void setGols(int golsfora) {
+        this.golsfora = golsfora;
     }
 
     public ArrayList<Integer> getTempo() {
@@ -34,12 +34,15 @@ public class timeFora extends time {
    for(int i=0;i<tempo.size();i++){
     int numeroSorteado= g.nextInt(10-getQualidade());
    if(numeroSorteado==0){
-    gols+=1;
+    golsfora+=1;
     System.out.println("gol do time fora aos "+tempo.get(i));
    }
 }
-    System.out.println("quantidade de gols "+gols);
+    System.out.println("quantidade de gols "+golsfora);
     }
+    public int mostrarGolfora(){
+    return getgolsfora();
+}
 }
 
 
