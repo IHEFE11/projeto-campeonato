@@ -5,8 +5,8 @@ public class timeCasa extends time implements Marcagol {
     private int golscasa;
     private ArrayList<Integer> tempo;
 
-    public timeCasa() {
-        super(e7.getNome(),e7.getQualidade());
+    public timeCasa(String nome, int qualidade) {
+        super(nome,qualidade);
         this.tempo = new ArrayList<>();
         for(int i=0;i<10;i++){
         tempo.add(i*10);}
@@ -35,7 +35,7 @@ public class timeCasa extends time implements Marcagol {
     int numeroSorteado= g.nextInt(10-getQualidade());
    if(numeroSorteado==0){
     golscasa+=1;
-    System.out.println("gol do time casa aos "+tempo.get(i));
+    System.out.println("gol do time "+getNome()+" aos "+tempo.get(i));
         }
     }
 }
